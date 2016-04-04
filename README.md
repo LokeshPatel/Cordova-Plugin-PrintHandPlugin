@@ -49,10 +49,10 @@ cordova plugin add https://github.com/LokeshPatel/Cordova-Plugin-PrintHandPlugin
      
  ``` 
   
-## 2) Print Web Page With URL
+## 2) Print Http URL Page
   ```
      fileURL ="http://www.printhand.com/;
-    navigator.printhandplugin.printWebPageWithURL(function(a){
+    navigator.printhandplugin.printWithHttpURL(function(a){
     console.log(a)
      },
     function(a){console.log(a)}, 
