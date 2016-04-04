@@ -10,7 +10,9 @@ More details [Printhand Doc](http://www.printhand.com/integration.php)
 Try to implement Cordova plugin with PrintHand for Android app.
 
 Plugin used .jar files for integration printhand plugin.  
-     intentAPI-7.4.5-sources.jar
+     
+     intentAPI-7.4.5-sources.jar,
+     
      printingSDK-7.4.5-sources.jar
 
 ## Master branch:
