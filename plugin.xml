@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	id="Cordova-Plugin-PrintHandPlugin"
+	version="1.0.0-dev">
+	<name>Print Hand Plugin</name>
+	<description>Print Hand Plugin With Cordova/PhoneGap</description>
+	<license>Apache 2.0</license>
+	
+	<keywords>cordova,Print Hand</keywords>
+	
+	<info> </info>
+	<repo>https://github.com/LokeshPatel/Cordova-Plugin-PrintHandPlugin.git</repo>
+
+	<js-module src="www/printhandplugin.js" name="PrintHandPlugin">
+		<clobbers target="navigator.printhandplugin"/>
+	</js-module>
+	
+	<engines>
+		<engine name="cordova" version=">=3.0.0"/>
+	</engines>
+	<!-- android -->
+	<platform name="android">
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			    <uses-permission android:name="android.permission.INTERNET" />
+			    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+                <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+		</config-file>
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="ShareIntentPrintHandPlugin">
+                  <param name="android-package" value="com.printhand.printingsample.ShareIntentPrintHandPlugin" />
+          </feature>
+		</config-file>
+	 	<source-file src="src/android/ShareIntentPrintHandPlugin.java" target-dir="src/com/printhand/printingsample" />
+	    <lib-file src="src/android/libs/intentAPI-7.4.5-sources.jar"/> 
+		<lib-file src="src/android/libs/printingSDK-7.4.5-sources.jar"/> 
+	</platform>
+</plugin>

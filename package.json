@@ -1,0 +1,19 @@
+{
+  "name": "Cordova-Plugin-PrintHandPlugin",
+  "version": "1.0.0-dev",
+  "description": "Cordova Plugin PrintHandPlugin",
+  "cordova": {
+    "id": "Cordova-Plugin-PrintHandPlugin",
+    "platforms": ["android"]
+    },
+    "repository": {
+      "type": "",
+      "url": ""
+      },
+      "keywords": [
+      "cordova",
+      "Print Hand Plugin"
+      ],
+      "author": "Lokesh Patel",
+      "license": "Apache 2.0"
+}
